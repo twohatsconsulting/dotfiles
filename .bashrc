@@ -64,7 +64,7 @@ export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/bin:$
 # default to ~/dev directory
 # don't forget to put a trailing slash or else you 
 # might slip into directories you do not want to be in
-export CDPATH=./:~/:~/dev/:/etc/:/var/:../:../../
+export CDPATH=./:~/:~/Documents/:~/Documents/Dev/:/etc/:/var/:../:../../
 
 # old prompt that fixed screen sessions -- saved for historical purposes
 #export PROMPT_COMMAND='history -a;source fixssh;echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\033\\"'
@@ -72,7 +72,6 @@ export CDPATH=./:~/:~/dev/:/etc/:/var/:../:../../
 
 # current minimalist prompt
 PS1="\[\033[0;31m\][\[\033[0;33m\]\w\[\033[0;31m\]]"'$(__git_ps1 " (\[\033[0;36m\]%s\[\033[0;31m\])")'" $\[\033[0m\] "
-shopt -s autocd
 shopt -s cdspell
 
 # fix commands like curl that don't add a newline at the end of their execution
